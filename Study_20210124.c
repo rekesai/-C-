@@ -1,13 +1,99 @@
 #include<stdio.h>
-
-//char reverse_string(char *string){
-//	if (*str != '\0'){
-//		printf("")
+//递归求斐波那契数
+//int Fib(int n){
+//	if (n < 3){
+//		return 1;
+//	}
+//	else{
+//		return Fib(n - 1) + Fib(n - 2);
 //	}
 //}
 //int main(){
+//	int n = 0;
+//	scanf("%d", &n);
+//	int ret = Fib(n);
+//	printf("%d\n", ret);
+//	return 0;
+//}
+//非递归求斐波那契数
+//int Fib(int n){
+//	int a = 1;
+//	int b = 1;
+//	int c = 1;
+//	while (n > 2){
+//		c = a + b;
+//		a = b;
+//		b = c;
+//		n--;
+//	}
+//	return c;
+//}
+//int main(){
+//	int n = 0;
+//	scanf("%d", &n);
+//	int ret = Fib(n);
+//	printf("%d\n", ret);
+//	return 0;
+//}
+
+
+//Exponential function指函数
+//int Exp(int n, int k){
+//	static int ret = 1;
+//	if (k > 1){
+//		Exp(n, k - 1);
+//	}
+//	return ret *= n;
+//}
+//int main(){
+//	int n = 0;
+//	int k = 0;
+//	scanf("%d%d", &n, &k);
+//	printf("%d\n", Exp(n, k));
+//	return 0;
+//}
+
+
+//计算一个非零整数的每位之和
+//int DigitSum(int  n){
+//	static int sum = 0;//只初始化一次
+//	if (n > 10){
+//		DigitSum(n / 10);
+//	}
+//	sum += n % 10;
+//	return sum;
+//}
+//int main(){
+//	int n = 0;
+//	scanf("%d", &n);
+//	printf("%d\n", DigitSum(n));
+//	return 0;
+//}
+
+
+//int mystrlen(char *str){//计算字符串长度
+//	if (*str != '\0'){
+//		return 1 + mystrlen(str + 1);
+//	}
+//	else{
+//		return 0;
+//	}
+//}
+//void reverse_string(char *string){//递归逆序字符串
+//	int len = mystrlen(string);
+//	char tmp = *string;
+//	*string = *(string + len - 1);
+//	*(string + len - 1) = '\0';
+//	if (mystrlen(string + 1) >= 2){
+//		reverse_string(string + 1);
+//	}
+//	*(string + len - 1) = tmp;
+//}
+//int main(){
 //	char arr[] = "abcdef";
+//	printf("逆序前：%s\n", arr);
 //	reverse_string(arr);
+//	printf("逆序后：%s\n", arr);
 //}
 
 
